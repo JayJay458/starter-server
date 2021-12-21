@@ -24,7 +24,18 @@ const seedDB = async () => {
 	  gpa: 3.3
 		});
 
+	const dummy_student2 = await Student.create({
+			firstname: "Hello",
+      lastname: "World",
+	  email: "world@gmail.com",
+	  imageUrl: "https://i.picsum.photos/id/552/300/300.jpg?hmac=PNRCM8Ok1p3iSo-YMBLQQ8csvpzqNMsTFu0jQONehTw",  
+	  gpa: 4.0
+		});
+
+
 	await dummy_student.setCampus(dummy_campus);
+	await dummy_student2.setCampus(dummy_campus);
+
 	
 }
 
